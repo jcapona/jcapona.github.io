@@ -1,0 +1,105 @@
+.navbar {
+  background-color: white;
+  margin:0;
+}
+
+#home {
+  text-align: center;
+  padding: 100px;
+  background : url('http://www.pensacolariders.com/blake/nyccenteredbackground.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  height: 60vh;
+  margin:0;
+}
+
+#about {
+  background : url('https://40.media.tumblr.com/6109e901a91635111bfadfc5fa76a2b4/tumblr_mt8e8h2YGq1qm64qlo1_1280.jpg')  no-repeat center center fixed;
+  background-size: cover;
+  margin:0;
+  height: 100vh;
+}
+
+#about p {
+  color: white;
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+  font-size: 200%;
+}
+
+#about img {
+  border-radius: 50%;
+  margin: auto;
+  width: 100%;
+  padding: 100px;
+}
+
+#portfolio {
+  background: url('http://transmythologies.arch.auth.gr/wp-content/uploads/2015/03/1800_background05.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin:0;
+  height: 110vh;
+}
+#contact {
+  background: url('http://pazzotech.com/wp-content/uploads/2015/03/021546325_prevstill.jpeg')  no-repeat center center fixed;
+  background-size: cover;
+  margin:0;
+  height: 50vh;
+}
+
+#contact p {
+  color: white;
+  font-family: 'Vollkorn', serif;
+}
+
+#home h1 {
+  color: #06AED5;
+  font-size: 600%;
+  font-family: 'Oswald', sans-serif;  font-weight: bold;
+  font-weight: bold;
+  text-shadow: 2px 1px 2px #000;
+}
+
+#contact a, #home a {
+  font-size: 200%;
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px #000;
+  -moz-box-shadow:    1px 1px 1px 1px rgb(0,0,0);
+  -webkit-box-shadow: 1px 1px 1px 1px rgb(0,0,0);
+  box-shadow:         1px 1px 1px 1px rgb(0,0,0);
+}
+
+
+h2 {
+  color: white;
+  font-family: 'Vollkorn', serif;
+  text-shadow: 2px 1px 2px #000;
+  font-size: 400%;
+}
+
+h3 {
+  color: lightgray;
+  font-size: 300%;
+  font-family: 'Vollkorn', serif;
+}
+
+
+
+button {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+.portfolio-img img {
+  height: 250px;
+}
+.portfolio-caption a {
+  color: black;
+  font-family: 'Arvo', sans-serif;
+  font-weight: normal;
+  font-size: 150%;
+  text-align:center;
+}
+
