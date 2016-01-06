@@ -17,7 +17,7 @@ p {
   width: 100%;
   height: auto;
   margin:0;
-  border-color: black;
+  border-color: transparent;
 }
 
 #nav.affix {
@@ -35,13 +35,15 @@ p {
   -webkit-animation: fadeIn 0.5s;
 }
 
-#nav a{
+#nav a, #nav2 a{
   font-family: 'Open Sans Condensed', sans-serif;
   border-color: white;
   border-style: solid;
+  font-weight: bold;
   border-width: 1px;
   color: white;
   padding: 10px;
+  text-decoration: none;
 }
 
 #nav a:hover, #nav2 a:hover {
@@ -52,12 +54,17 @@ p {
   -moz-transition: all ease .5s;
 }
 
-#nav li, #nav2 li {
+#nav li, #nav2 a {
   margin: 0 10px 0 10px;
 }
 
 #nav .container-fluid {
  margin: 15px 0 15px 0;
+}
+
+#nav2 {
+  text-align:right;
+  margin: 0 0 50px 0;
 }
 
 #home {
@@ -75,24 +82,6 @@ p {
 #home p {
   text-align: right;
   font-size: 250%;
-}
-
-
-#nav2 a {
-  font-family: 'Open Sans Condensed', sans-serif;
-  border-color: white;
-  border-style: solid;
-  border-width: 1px;
-  color: white;
-  padding: 5px;
-}
-  
-#nav2 a:hover {
-
-}
-
-#nav2 li {
-
 }
 
 #about {
@@ -139,7 +128,8 @@ p {
 }
 
 
-#contact a, #home a {
+.buttons a {
+  margin: 20px 0 0 0;
   font-size: 100%;
   font-family: 'Vollkorn', serif;
   font-weight: normal;
