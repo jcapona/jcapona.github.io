@@ -47,7 +47,7 @@ p {
   -webkit-animation: fadeIn 0.5s;
 }
 
-#nav a, #nav2 a{
+.nav-buttons a{
   font-family: 'Open Sans Condensed', sans-serif;
   border-color: white;
   border-style: solid;
@@ -56,18 +56,15 @@ p {
   color: white;
   padding: 10px;
   text-decoration: none;
+  margin: 0 10px 0 10px;
 }
 
-#nav a:hover, #nav2 a:hover {
+.nav-buttons a:hover {
   background:white;
   color: black;
   transition: all ease .5s;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
-}
-
-#nav li, #nav2 a {
-  margin: 0 10px 0 10px;
 }
 
 #nav .container-fluid {
@@ -97,14 +94,14 @@ p {
 }
 
 #about {
-  background : url('https://40.media.tumblr.com/6109e901a91635111bfadfc5fa76a2b4/tumblr_mt8e8h2YGq1qm64qlo1_1280.jpg')  no-repeat center center fixed;
+  background : black;
   background-size: cover;
   margin:0;
   height: 100vh;
   text-align: left;
 }
 
-#about h2 {
+#about h2{
   font-size: 400%;
   text-align: left;
 }
@@ -128,15 +125,21 @@ p {
 }
 
 #contact {
-  background: url('http://pazzotech.com/wp-content/uploads/2015/03/021546325_prevstill.jpeg')  no-repeat center center fixed;
+  background: black;
   background-size: cover;
   margin:0;
   height: 50vh;
 }
 
+#contact h2{
+  font-size: 400%;
+  text-align: center;
+}
+
+
 #contact p {
   color: white;
-  font-family: 'Vollkorn', serif;
+  text-align: center;
 }
 
 
