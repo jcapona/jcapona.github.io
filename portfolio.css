@@ -1,3 +1,15 @@
+.hidden {
+    display: none;
+}
+
+.affix .hidden {
+    display: block !important;
+  }
+
+body {
+  background-color: black;
+}
+
 h1, h2 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
