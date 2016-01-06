@@ -9,7 +9,7 @@ objArr.push({title: "Simon Game",
             descr: "Small countdown timer.", 
             alt: "Simon Game", 
             link: "http://codepen.io/jcapona/full/obBEjX", 
-            img: "https://40.media.tumblr.com/2e1de5d17e878017a1724b7cf0241e85/tumblr_o0jnodHdTv1ugdw86o2_1280.png"});
+            img: "https://40.media.tumblr.com/2e1de5d17e878017a1724b7cf0241e85/tumblr_o0jnodHdTv1ugdw86o2_640.png"});
            
 objArr.push({title: "FCC TwitchTV", 
             descr: "Playing with Twitch.TV API", 
@@ -33,7 +33,7 @@ objArr.push({title: "Cool Quotes",
             descr: "Small quote generator", 
             alt: "Cool Quotes", 
             link: "http://codepen.io/jcapona/full/vLXLON", 
-            img: "https://41.media.tumblr.com/987a9bfbbaa4f8105076e7ab85ef1f46/tumblr_o0jnodHdTv1ugdw86o5_1280.png"});
+            img: "https://41.media.tumblr.com/987a9bfbbaa4f8105076e7ab85ef1f46/tumblr_o0jnodHdTv1ugdw86o5_640.png"});
                         
 objArr.push({title: "Tic-tac-toe", 
             descr: "Dare you to beat me.", 
@@ -45,7 +45,7 @@ objArr.push({title: "Camper news",
             descr: "Gets you the latest user posted news from Free Code Camp", 
             alt: "Camper news", 
             link: "http://codepen.io/jcapona/full/OMbqNd", 
-            img: "https://40.media.tumblr.com/1fb6ff788b9ab41a4b01b0e8f438f512/tumblr_o0jnodHdTv1ugdw86o1_1280.png"});  
+            img: "https://40.media.tumblr.com/1fb6ff788b9ab41a4b01b0e8f438f512/tumblr_o0jnodHdTv1ugdw86o1_640.png"});  
       
       
 $(document).ready(function() {
