@@ -12,14 +12,30 @@ p {
   text-align: right;
 }
 
-.navbar {
+#nav {
   background-color: black;
   width: 100%;
-  border-color: black;
   height: auto;
+  margin:0;
+  border-color: black;
 }
 
-#nav a {
+#nav.affix {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border: 0;
+  margin-top: 0;
+  padding-top: 0px;
+  border-radius: 0;
+  animation: fadeIn 0.5s ease-in;
+  -webkit-animation: fadeIn 0.5s;
+}
+
+#nav a{
   font-family: 'Open Sans Condensed', sans-serif;
   border-color: white;
   border-style: solid;
@@ -28,15 +44,15 @@ p {
   padding: 10px;
 }
 
-#nav a:hover {
+#nav a:hover, #nav2 a:hover {
   background:white;
   color: black;
   transition: all ease .5s;
   -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s,
+  -moz-transition: all ease .5s;
 }
 
-#nav li {
+#nav li, #nav2 li {
   margin: 0 10px 0 10px;
 }
 
@@ -59,6 +75,24 @@ p {
 #home p {
   text-align: right;
   font-size: 250%;
+}
+
+
+#nav2 a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  padding: 5px;
+}
+  
+#nav2 a:hover {
+
+}
+
+#nav2 li {
+
 }
 
 #about {
@@ -113,11 +147,6 @@ p {
   -moz-box-shadow:    1px 1px 1px 1px rgb(0,0,0);
   -webkit-box-shadow: 1px 1px 1px 1px rgb(0,0,0);
   box-shadow:         1px 1px 1px 1px rgb(0,0,0);
-}
-
-..container-full {
-  margin: 0 auto;
-  width: 100%;
 }
 
 #portfolio .col-md-4 {
