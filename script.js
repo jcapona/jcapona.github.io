@@ -46,7 +46,12 @@ objArr.push({title: "Camper news",
             alt: "Camper news", 
             link: "http://codepen.io/jcapona/full/OMbqNconsoled", 
             img: "https://40.media.tumblr.com/1fb6ff788b9ab41a4b01b0e8f438f512/tumblr_o0jnodHdTv1ugdw86o1_1280.png"});  
-      
+
+objArr.push({title: "Mini Calq", 
+            descr: "Small calculator", 
+            alt: "Mini Calq", 
+            link: "http://codepen.io/jcapona/full/xZEJvm", 
+            img: "https://40.media.tumblr.com/37845fbfc15e81ef1a2034b00e3462c7/tumblr_o1xq2cafNl1ugdw86o1_1280.png"});
       
 $(document).ready(function() {
   $('#nav').affix({
