@@ -45,7 +45,7 @@ objArr.push({title: "Camper news",
             descr: "Gets you the latest user posted news from Free Code Camp", 
             alt: "Camper news", 
             link: "http://codepen.io/jcapona/full/OMbqNconsoled", 
-            img: "https://40.media.tumblr.com/1fb6ff788b9ab41a4b01b0e8f438f512/tumblr_o0jnodHdTv1ugdw86o1_640.png"});  
+            img: "https://40.media.tumblr.com/1fb6ff788b9ab41a4b01b0e8f438f512/tumblr_o0jnodHdTv1ugdw86o1_1280.png"});  
       
       
 $(document).ready(function() {
