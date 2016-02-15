@@ -1,9 +1,39 @@
 var objArr = [];
+objArr.push({title: "IPROC", 
+            descr: "IPROC landing page", 
+            alt: "IPROC", 
+            link: "http://www.iproc.co", 
+            img: "https://40.media.tumblr.com/27271c983cbfe310911c65e2dd829281/tumblr_o2lpryvt4O1ugdw86o1_1280.png"});
+
+objArr.push({title: "QuickPoll", 
+            descr: "App to make online polls", 
+            alt: "QuickPoll", 
+            link: "http://quick-poll.herokuapp.com", 
+            img: "https://41.media.tumblr.com/ea9b77885b925e4548680619fa03f296/tumblr_o2lq03BaaQ1ugdw86o1_1280.png"});
+
+objArr.push({title: "Mini Calq", 
+            descr: "Small calculator", 
+            alt: "Mini Calq", 
+            link: "http://codepen.io/jcapona/full/xZEJvm", 
+            img: "https://40.media.tumblr.com/37845fbfc15e81ef1a2034b00e3462c7/tumblr_o1xq2cafNl1ugdw86o1_1280.png"});
+
+objArr.push({title: "WikiSearch", 
+            descr: "Search in Wikipedia from this web.", 
+            alt: "WikiSearch", 
+            link: "http://codepen.io/jcapona/full/YwpmNm", 
+            img: "https://40.media.tumblr.com/0cbd2ccd319335757f4908bebcf22d84/tumblr_o0l7pkc3WZ1ugdw86o1_1280.png"});
+
 objArr.push({title: "Pomodoro Clock", 
             descr: "Small countdown timer.", 
             alt: "Pomodoro Clock", 
             link: "http://codepen.io/jcapona/full/xZEqLv", 
             img: "https://40.media.tumblr.com/6088fe76093db527f3472a7a7ddae49b/tumblr_o0l75dUUf51ugdw86o1_1280.png"});
+
+objArr.push({title: "Tic-tac-toe", 
+            descr: "Dare you to beat me.", 
+            alt: "Tic-tac-toe", 
+            link: "http://codepen.io/jcapona/full/pgRezR", 
+            img: "https://40.media.tumblr.com/02a4e96acf19a8cb17e9bdb8d45eb634/tumblr_o0ld31pq9B1ugdw86o1_1280.png"});
 
 objArr.push({title: "Simon Game", 
             descr: "Small countdown timer.", 
@@ -23,23 +53,11 @@ objArr.push({title: "WeatherApp",
             link: "http://codepen.io/jcapona/full/PZbdpN", 
             img: "https://41.media.tumblr.com/e4e64976fb0dba005adfd3ec846d3f27/tumblr_o0l8381K3D1ugdw86o1_1280.png"});
 
-objArr.push({title: "WikiSearch", 
-            descr: "Search in Wikipedia from this web.", 
-            alt: "WikiSearch", 
-            link: "http://codepen.io/jcapona/full/YwpmNm", 
-            img: "https://40.media.tumblr.com/0cbd2ccd319335757f4908bebcf22d84/tumblr_o0l7pkc3WZ1ugdw86o1_1280.png"});
-            
 objArr.push({title: "Cool Quotes", 
             descr: "Small quote generator", 
             alt: "Cool Quotes", 
             link: "http://codepen.io/jcapona/full/vLXLON", 
             img: "https://40.media.tumblr.com/ea90fddb9c74928ba3e9051e2894bea8/tumblr_o0lajrpKUm1ugdw86o1_1280.png"});
-                        
-objArr.push({title: "Tic-tac-toe", 
-            descr: "Dare you to beat me.", 
-            alt: "Tic-tac-toe", 
-            link: "http://codepen.io/jcapona/full/pgRezR", 
-            img: "https://40.media.tumblr.com/02a4e96acf19a8cb17e9bdb8d45eb634/tumblr_o0ld31pq9B1ugdw86o1_1280.png"});
            
 objArr.push({title: "Camper news", 
             descr: "Gets you the latest user posted news from Free Code Camp", 
@@ -47,12 +65,8 @@ objArr.push({title: "Camper news",
             link: "http://codepen.io/jcapona/full/OMbqNconsoled", 
             img: "https://40.media.tumblr.com/1fb6ff788b9ab41a4b01b0e8f438f512/tumblr_o0jnodHdTv1ugdw86o1_1280.png"});  
 
-objArr.push({title: "Mini Calq", 
-            descr: "Small calculator", 
-            alt: "Mini Calq", 
-            link: "http://codepen.io/jcapona/full/xZEJvm", 
-            img: "https://40.media.tumblr.com/37845fbfc15e81ef1a2034b00e3462c7/tumblr_o1xq2cafNl1ugdw86o1_1280.png"});
-      
+
+
 $(document).ready(function() {
   $('#nav').affix({
         offset: {
