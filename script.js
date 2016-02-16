@@ -62,31 +62,106 @@ objArr.push({title: "Cool Quotes",
 objArr.push({title: "Camper news", 
             descr: "Gets you the latest user posted news from Free Code Camp", 
             alt: "Camper news", 
-            link: "http://codepen.io/jcapona/full/OMbqNconsoled", 
+            link: "http://codepen.io/jcapona/full/OMbqNd", 
             img: "https://40.media.tumblr.com/1fb6ff788b9ab41a4b01b0e8f438f512/tumblr_o0jnodHdTv1ugdw86o1_1280.png"});  
+
+
+var objArrPhot = [];
+objArrPhot.push({title: "Colors", 
+            descr: "", 
+            alt: this.title, 
+            link: "https://www.flickr.com/photos/jcapona/21556334315/", 
+            img: "https://farm6.staticflickr.com/5729/21556334315_42c915a92c_c.jpg"});
+objArrPhot.push({title: "Vintage", 
+            descr: "", 
+            alt: this.title, 
+            link: "https://www.flickr.com/photos/jcapona/22754772210/in/dateposted-public/", 
+            img: "https://farm6.staticflickr.com/5635/22754772210_bc285f4e64_c.jpg"});
+objArrPhot.push({title: "Life & Death", 
+            descr: "", 
+            alt: this.title, 
+            link: "https://www.flickr.com/photos/jcapona/23368870911/", 
+            img: "https://farm1.staticflickr.com/671/23368870911_598a5d3a5f_c.jpg"});
+objArrPhot.push({title: "Handpainted clouds", 
+            descr: "", 
+            alt: this.title, 
+            link: "https://www.flickr.com/photos/jcapona/22760411739/", 
+            img: "https://farm6.staticflickr.com/5683/22760411739_a6e9fdb170_c.jpg"});
+objArrPhot.push({title: "Dock", 
+            descr: "", 
+            alt: this.title, 
+            link: "https://www.flickr.com/photos/jcapona/16399842067/", 
+            img: "https://farm9.staticflickr.com/8569/16399842067_1e2fc6a0bb_c.jpg"});
+objArrPhot.push({title: "Cartagena's night", 
+            descr: "", 
+            alt: this.title, 
+            link: "https://www.flickr.com/photos/jcapona/16818097418/", 
+            img: "https://farm9.staticflickr.com/8689/16818097418_3d2e11b5fb_c.jpg"});
 
 
 
 $(document).ready(function() {
   $('#nav').affix({
         offset: {
-          top: $("#home").height()
+          top: $("#home").height()/2
         }
   });
   
-  $('body').scrollspy({target: ".nav-buttons", offset: 50});   
-
-  $(".nav-buttons a").on('click', function(event) {
-    event.preventDefault();
+  $('body').scrollspy({target: "#nav-btns", offset: 70});
+  
+  $(".arrow").on('click', function(e) {
+    e.preventDefault();
     var hash = this.hash;
 
     $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function(){
+      scrollTop: $(hash).offset().top-70
+    }, 1000, function(){
       window.location.hash = hash;
     });
   });
 
+  $(".nav-buttons a").on('click', function(e) {
+    e.preventDefault();
+    var hash = this.hash;
+
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top-70
+    }, 1000, function(){
+      window.location.hash = hash;
+    });
+  });
+
+  $(".nav-buttons2 a").on('click', function(e) {
+    e.preventDefault();
+    var hash = this.hash;
+
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top-70
+    }, 1000, function(){
+      window.location.hash = hash;
+    });
+  });
+
+  // Load portfolio sections
+  loadPortfolio(objArr, function html(code){$("#portf-item").append(code);});
+  loadPortfolio(objArrPhot, function html(code){$("#portf-item-phot").append(code);});
+  
+  // Portfolio hover effects
+  $('.thumbnail').hover(
+    function(){
+      $(this).find('.caption').fadeIn(400);
+    },
+    function(){
+      $(this).find('.caption').fadeOut(400);
+    }
+  ); 
+
+});
+
+
+
+function loadPortfolio(objArr, callback)
+{
   // Loads portfolio section
   var html = "";
   var num = 0;
@@ -98,9 +173,16 @@ $(document).ready(function() {
     if(num === 0)
       html += '<div class="row">';
 
-    html += '<div class="col-xs-6 col-md-4"><div class="portfolio-item"><a href="'+portf.link+'" target="_blank"><div class="portfolio-hover">';
-    html += '<div class="portfolio-hover-content"><div class="portfolio-caption"><h3>'+portf.title+'</h3><p>'+portf.descr+'</p></div></div></div>';
-    html += '<img src="'+portf.img+'" alt="'+portf.alt+'"></a></div></div>';
+    html += '<div class="col-xs-12 col-md-4">';
+      html += '<div class="thumbnail">';
+          html += '<div class="caption">';
+            html += '<h3>'+portf.title+'</h3>';
+            html += '<p>'+portf.descr+'</p>';
+            html += '<p><a href="'+portf.link+'" target="_blank" class="btn btn-danger" rel="tooltip" title="View">View</a>'
+          html += '</div>';
+          html += '<img class="img-responsive" src="'+portf.img+'" alt="'+portf.alt+'">';
+        html += '</div>';
+    html += '</div>';
 
     if((num === 2))
     {
@@ -115,19 +197,15 @@ $(document).ready(function() {
       var j=1;
       while(j<=3-rest)
       {
-        html += '<div class="col-xs-6 col-md-4"><div class="portfolio-item"><a href="'+""+'" target="_blank"><div class="portfolio-hover">';
-        html += '<div class="portfolio-hover-content"><div class="portfolio-caption"><h3>'+""+'</h3><p>'+""+'</p></div></div></div>';
-        html += '<img src="'+""+'" alt="'+""+'"></a></div></div>';
+        html += '<div class="col-xs-6 col-md-4">';
+        html += '</div>';
         j++;
       }
       html += '</div>';
     }
   }
-  $("#portf-item").append(html);
-  
-
-
-});
+  callback(html);
+}
 
 
 

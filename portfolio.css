@@ -1,33 +1,33 @@
 .hidden {
-    display: none;
+  display: none;
 }
 
 .affix .hidden {
-    display: block !important;
-  }
-
-body {
-  background-color: black;
+  display: block !important;
 }
 
-h1, h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  text-shadow: 2px 1px 2px #000;
-  color: #06AED5;
+body {
+  background-color: white;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  color: #00A8E8;
+  margin: 20px 0 20px 0;
 }
 
 p {
-  color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
+  color: black;
   text-align: right;
 }
 
 #nav {
   background-color: black;
   width: 100%;
-  height: auto;
+  min-height: 0;
+  max-height: auto;
   margin:0;
   border-color: transparent;
 }
@@ -47,19 +47,37 @@ p {
   -webkit-animation: fadeIn 0.5s;
 }
 
-.nav-buttons a{
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#nav-btns .active li, #nav-btns .active a {
+    background-color: black;
+    color: #00A8E8;
+    font-weight: bold;
+}
+
+.nav-buttons a {
   font-family: 'Open Sans Condensed', sans-serif;
-  border-color: gray;
-  border-style: solid;
-  font-weight: bold;
-  border-width: 1px;
-  color: gray;
-  padding: 10px;
+  font-weight: 400;
+  font-size: 150%;
+  color: white;
+  
+  //border-color: gray;
+  //border-style: solid;
+  //border-width: 1px;
+
   text-decoration: none;
   margin: 0 10px 0 10px;
 }
 
-.nav-buttons a:hover {
+.nav-buttons a:hover, .nav-buttons2 a:hover {
   background:gray;
   color: black;
   transition: all ease .5s;
@@ -67,8 +85,8 @@ p {
   -moz-transition: all ease .5s;
 }
 
-#nav .container-fluid {
- margin: 15px 0 15px 0;
+#nav .container {
+ padding: 10px 0 10px 0;
 }
 
 #nav2 {
@@ -76,52 +94,81 @@ p {
   margin: 0 0 50px 0;
 }
 
+.nav-buttons2 a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 150%;
+  color: black;
+  
+  padding: 10px 10px 10px 10px;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+}
+
+.arrow {
+  min-height: 10vh;
+  font-size: 400%;
+  color: #00A8E8;
+  font-weight: bold;
+  margin: 10vh 0 10vh 0;
+}
+
 #home {
-  padding: 200px;
-  background: black;
-  height: 100vh;
+  padding-top: 10vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 #home h1 {
   font-size: 800%;
-  text-align:right;
+  font-weight: 500;
+  text-align:center;
 }
 
 #home p {
-  text-align: right;
-  font-size: 250%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 150%;
   margin: 0;
 }
 
 #about {
-  background : black;
+  background: url('img/me2.jpg') no-repeat center center;
   background-size: cover;
-  margin:0;
-  height: 100vh;
-  text-align: left;
+  text-align: right;
+  min-height: 90vh;
+  overflow: hidden;
+  opacity: 1;
+}
+
+#about .row {
+  background-color: black;
+  min-height: 90vh;
+  opacity: 0.7;
+}
+#about .text {
+  vertical-align: middle;
 }
 
 #about h2{
   font-size: 400%;
-  text-align: left;
-  margin: 30px 0 0 0;
+  text-align: right;
+  margin: 100px 50px 30px 0;
 }
 
 #about p {
-  text-align: left;
-}
-
-#about img {
-  border-radius: 0%;
-  margin: auto;
-  width: 100%;
-  padding: 100px;
+  text-align: right;
+  font-weight: 300;
+  font-size: 200%;
+  color: white;
+  margin-right: 50px;
 }
 
 .portfolio {
-  background: black;
-  background-size: cover;
   margin:0;
   height: auto;
 }
@@ -133,10 +180,8 @@ p {
 }
 
 #contact {
-  background: black;
-  background-size: cover;
-  margin:0;
-  height: 50vh;
+  margin-top: 50px;
+  min-height: 50vh;
 }
 
 #contact h2{
@@ -145,94 +190,52 @@ p {
   margin: 30px 0 0 0;
 }
 
-
 #contact p {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 200%;
+  margin-bottom: 50px;
 }
 
 .icons {
- text-align: right;
+ text-align: center;
 }
 
 .icons a {
-  color: gray;
+  color: black;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
   margin: 20px 0 0 0;
-  font-size: 400%;
-  text-shadow: 1px 1px 1px #000;
-  -moz-box-shadow:    1px 1px 1px 1px rgb(0,0,0);
-  -webkit-box-shadow: 1px 1px 1px 1px rgb(0,0,0);
-  box-shadow:         1px 1px 1px 1px rgb(0,0,0);
+  font-size: 5vh;
 }
 
 .icons a:hover {
   color: #06AED5;
-  text-shadow: 1px 1px 1px #000;
-  -moz-box-shadow:    1px 1px 1px 1px rgb(0,0,0);
-  -webkit-box-shadow: 1px 1px 1px 1px rgb(0,0,0);
-  box-shadow:         1px 1px 1px 1px rgb(0,0,0);
 }
 
-.buttons a {
-  margin: 20px 0 0 0;
-  font-size: 100%;
-  font-family: 'Vollkorn', serif;
-  font-weight: normal;
-  text-shadow: 1px 1px 1px #000;
-  -moz-box-shadow:    1px 1px 1px 1px rgb(0,0,0);
-  -webkit-box-shadow: 1px 1px 1px 1px rgb(0,0,0);
-  box-shadow:         1px 1px 1px 1px rgb(0,0,0);
-}
-
-.portfolio .col-md-4, .portfolio row {
-  padding: 0;
+.portfolio .col-md-4, .portfolio .col-xs.6 {
   margin: 0 0 0 0;
 }
 
-.portfolio .portfolio-item .portfolio-hover {
-  background: rgba(0, 0, 0, .9);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease .5s;
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;;
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+ 
+.caption {
+    position:absolute;
+    top: 0;
+    right: 0;
+    background: rgba(35, 100, 205, 0.8);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+    padding: 30%;
 }
 
-.portfolio .portfolio-item .portfolio-hover:hover {
-  opacity: 1;
-}
-
-.portfolio-hover-content {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 40%;
-  margin-top: 0;
-}
-
-.portfolio-caption p{
-  text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size:200%;
-}
-
-.portfolio-caption h3{
-  font-family: 'Open Sans Condensed', sans-serif;
-  text-align: center;
-  font-size:200%;
-  text-decoration: none;
-}
-
-.portfolio-item img {
-  width: 100%;
-  height: auto;
-  border-width: 0px;
-  overflow: hidden;
+.caption h3, .caption p {
+  color: #fff;
   text-align: center;
 }
 

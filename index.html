@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="Jorge Capona">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic|Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,100,300,500,700,800,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -17,188 +26,46 @@
 </head>
 
 <body>
-  
-    <nav id="nav" class="navbar" role="navigation" data-spy="affix">
-      <div class="hidden container-fluid">
-        <div class="navbar-header">
-          <ul class="nav navbar-nav nav-buttons">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#port">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav> 
-  
-  <div id="home">  
-    <div class="container-fluid">      
 
-      <div id="nav2" class="nav-buttons">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#port">PORTFOLIO</a>
-        <a href="#contact">CONTACT</a>
+  <nav id="nav" class="navbar" role="navigation" data-spy="affix">
+    <div class="container hidden">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar-collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-      
-      <h1>JORGE C&Aacute;PONA</h1>
-        <p>Electronic Engineer, chilean, entrepreneur,</p><p>currently studying web design.</p>
-      <div class="icons">
-        <a href="http://www.twitter.com/jcapona" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
-        <a href="https://github.com/jcapona" target="_blank"><i class="fa fa-github fa-fw"></i></a>
-        <a href="https://www.linkedin.com/in/jcapona" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
-        <a href="http://www.codepen.io/jcapona" target="_blank"><i class="fa fa-codepen fa-fw"></i></a>
-        <a href="http://www.freecodecamp.com/jcapona" target="_blank"><i class="fa fa-fire fa-fw"></i></a>
-        <a href="https://www.flickr.com/jcapona" target="_blank"><i class="fa fa-flickr fa-fw"></i></a>
-        <a href="https://www.medium.com/@jcapona" target="_blank"><i class="fa fa-medium fa-fw"></i></a>
+
+      <div id="nav-btns" class="collapse navbar-collapse" id="navbar-collapsed">
+        <ul class="nav navbar-nav nav-buttons">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#port">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+        <!--
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.twitter.com/jcapona" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+          <li><a href="https://github.com/jcapona" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jcapona" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+          <li><a href="http://www.codepen.io/jcapona" target="_blank"><i class="fa fa-codepen fa-fw"></i></a></li>
+          <li><a href="http://www.freecodecamp.com/jcapona" target="_blank"><i class="fa fa-fire fa-fw"></i></a></li>
+          <li><a href="https://www.flickr.com/jcapona" target="_blank"><i class="fa fa-flickr fa-fw"></i></a></li>
+          <li><a href="https://www.medium.com/@jcapona" target="_blank"><i class="fa fa-medium fa-fw"></i></a></li>
+        </ul>
+        -->
       </div>
+
     </div>
-  </div>
+  </nav>
 
-  <div id="about" class="jumbotron">
-    <div class="container">
+  <div id="home" class="container-fluid">
+
     <div class="row">
-      <div class="col-md-7">
-        <h2>HEY THERE!</h2>
-        <p>My name is Jorge C&aacute;pona, i'm an electronic engineer, originally from Viña del Mar - Chile, passionate about technology, software and hardware. I'm also curious about new programming languages and electronics, from microcontrollers to power applications. I also love photography.</p>
-        <p>I've worked mainly in the development of innovation projects, in communications, electronics and instrumentation areas. I have been part of the design team of several computer vision systems, currently working in the industry.</p>
-        <p>I'm currently working and learning full stack web developer skills with FreeCodeCamp.</p>
-      </div>
-      <div class="col-md-5">
-        <img alt="Me" class="img-responsive" src="https://avatars.githubusercontent.com/u/14126805?v=3">
-      </div>
-    </div>
-    </div>
-  </div>
-
-<div id="port">
-  <div class="portfolio">
-      <div class="container-fluid">      
-        <span id="portf-item"></span>
-      </div>
-  </div>
-</div>
-
-<div class="portfolio">
-    <div class="container-fluid">      
-      <div class="row">
-        <div class="col xs-6 col-md-4">
-          <div class="portfolio-item">
-          <a href="http://www.google.cl" target="_blank">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                  <div class="portfolio-caption">
-                    <h3>Colors</h3>
-                    <p></p>
-                  </div>
-              </div>
-            </div>
-            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/jcapona/21556334315/" title="Colors"><img src="https://farm6.staticflickr.com/5729/21556334315_42c915a92c_c.jpg" width="800" height="534" alt="Colors"></a>
-          </a>
-          </div>
-        </div>        
-
-        <div class="col xs-6 col-md-4">
-          <div class="portfolio-item">
-          <a href="http://www.google.cl" target="_blank">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                  <div class="portfolio-caption">
-                    <h3>Vintage</h3>
-                    <p></p>
-                  </div>
-              </div>
-            </div>
-            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/jcapona/22754772210/in/dateposted-public/" title="Vintage"><img src="https://farm6.staticflickr.com/5635/22754772210_bc285f4e64_c.jpg" width="800" height="534" alt="Vintage"></a>
-          </a>
-          </div>
-        </div>        
-
-        <div class="col xs-6 col-md-4">
-          <div class="portfolio-item">
-          <a href="http://www.google.cl" target="_blank">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                  <div class="portfolio-caption">
-                    <h3>Life & Death</h3>
-                    <p></p>
-                  </div>
-              </div>
-            </div>
-            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/jcapona/23368870911/" title="Life &amp; death"><img src="https://farm1.staticflickr.com/671/23368870911_598a5d3a5f_c.jpg" width="800" height="534" alt="Life &amp; death"></a>
-          </a>
-          </div>
-        </div>        
-
-      </div> <!--row-->
-
-      <div class="row">
-        <div class="col xs-6 col-md-4">
-          <div class="portfolio-item">
-          <a href="http://www.google.cl" target="_blank">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                  <div class="portfolio-caption">
-                    <h3>Painted Clouds</h3>
-                    <p></p>
-                  </div>
-              </div>
-            </div>
-            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/jcapona/22760411739/" title="Painted clouds"><img src="https://farm6.staticflickr.com/5683/22760411739_a6e9fdb170_c.jpg" width="800" height="494" alt="Painted clouds"></a>
-          </a>
-          </div>
-        </div>        
-
-        <div class="col xs-6 col-md-4">
-          <div class="portfolio-item">
-          <a href="http://www.google.cl" target="_blank">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                  <div class="portfolio-caption">
-                    <h3>Muelle</h3>
-                    <p></p>
-                  </div>
-              </div>
-            </div>
-            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/jcapona/16399842067/" title="Muelle"><img src="https://farm9.staticflickr.com/8569/16399842067_1e2fc6a0bb_c.jpg" width="800" height="534" alt="Muelle"></a>
-          </a>
-          </div>
-        </div>        
-
-        <div class="col xs-6 col-md-4">
-          <div class="portfolio-item">
-          <a href="http://www.google.cl" target="_blank">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                  <div class="portfolio-caption">
-                    <h3>Cartagena de noche</h3>
-                    <p></p>
-                  </div>
-              </div>
-            </div>
-            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/jcapona/16818097418/" title="Cartagena de noche"><img src="https://farm9.staticflickr.com/8689/16818097418_3d2e11b5fb_c.jpg" width="800" height="534" alt="Cartagena de noche"></a>
-          </a>
-          </div>
-        </div>        
-
-      </div> <!--row-->
-            
-    </div>
-  </div>
-
-
-  <div id="contact" class="container-fluid">
-      <h2>Interested in contacting me?</h2>
-      <p>Use the following links</p>
-
-  </div>
-  
-  <div id="footer" class="container-fluid">
-    
-    <div class="row">
-      <div class="col-md-6">
-      </div>
-      <div class="col-md-6 text-center">
+      <div class="col-xs-12 col-md-12"><h1>Jorge C&aacute;pona</h1></div>
+      <div class="col-xs-12 col-md-12">
         <div class="icons">
           <a href="http://www.twitter.com/jcapona" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
           <a href="https://github.com/jcapona" target="_blank"><i class="fa fa-github fa-fw"></i></a>
@@ -206,9 +73,59 @@
           <a href="http://www.codepen.io/jcapona" target="_blank"><i class="fa fa-codepen fa-fw"></i></a>
           <a href="http://www.freecodecamp.com/jcapona" target="_blank"><i class="fa fa-fire fa-fw"></i></a>
           <a href="https://www.flickr.com/jcapona" target="_blank"><i class="fa fa-flickr fa-fw"></i></a>
+          <a href="https://www.medium.com/@jcapona" target="_blank"><i class="fa fa-medium fa-fw"></i></a>
         </div>
       </div>
+      <div class="col-xs-12 col-md-12">
+          <p>Electronic Engineer, chilean, entrepreneur,</p>
+          <p>currently studying web design.</p>
+      </div>
+    </div>
+
+    <div class="text-center"><a class="arrow" href="#about"><i class="fa fa-chevron-down"></i></a></div>
     </div>
   </div>
+
+  <div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 text"></div>
+      <div class="col-xs-12 col-md-6 text">
+        <h2>Hey there!</h2>
+        <p>I'm an electronic engineer from Viña del Mar, Chile, passionate about technology, software, hardware and photography. I'm also curious about new programming languages and electronics, from microcontrollers to power applications. Currently, I'm working and learning full stack web developer skills with FreeCodeCamp.</p>
+        <!--
+        <p>I've worked mainly in the development of innovation projects, in communications, electronics and instrumentation areas. I have been part of the design team of several computer vision systems, currently working in the industry.</p>
+        -->
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="port" class="portfolio">
+    <h2>Web Portfolio</h2>
+    <p></p>
+    <span id="portf-item"></span>
+  
+    <h2>Photography Portfolio</h2>
+    <p></p>
+    <span id="portf-item-phot"></span>
+  </div>
+
+  <div id="contact" class="container-fluid">
+  	<h2>Interested in contacting me?</h2>
+  	<p>Use the following links</p>
+    <div class="icons">
+        <a href="http://www.twitter.com/jcapona" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+        <a href="https://github.com/jcapona" target="_blank"><i class="fa fa-github fa-fw"></i></a>
+        <a href="https://www.linkedin.com/in/jcapona" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
+        <a href="http://www.codepen.io/jcapona" target="_blank"><i class="fa fa-codepen fa-fw"></i></a>
+        <a href="http://www.freecodecamp.com/jcapona" target="_blank"><i class="fa fa-fire fa-fw"></i></a>
+        <a href="https://www.flickr.com/jcapona" target="_blank"><i class="fa fa-flickr fa-fw"></i></a>
+        <a href="https://www.medium.com/@jcapona" target="_blank"><i class="fa fa-medium fa-fw"></i></a>
+    </div>
+  </div>
+  
+  <div id="footer" class="container-fluid">
+  </div>
+
 </body>
 </html>
