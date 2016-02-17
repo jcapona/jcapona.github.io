@@ -178,7 +178,7 @@ function loadPortfolio(objArr, callback)
           html += '<div class="caption">';
             html += '<h3>'+portf.title+'</h3>';
             html += '<p>'+portf.descr+'</p>';
-            html += '<p><a href="'+portf.link+'" target="_blank" class="btn btn-danger" rel="tooltip" title="View">View</a>'
+            html += '<p><a href="'+portf.link+'" target="_blank" class="btn btn-danger" rel="tooltip" title="View">View</a></p>';
           html += '</div>';
           html += '<img class="img-responsive" src="'+portf.img+'" alt="'+portf.alt+'">';
         html += '</div>';
@@ -197,7 +197,7 @@ function loadPortfolio(objArr, callback)
       var j=1;
       while(j<=3-rest)
       {
-        html += '<div class="col-xs-6 col-md-4">';
+        html += '<div class="col-xs-12 col-md-4">';
         html += '</div>';
         j++;
       }
