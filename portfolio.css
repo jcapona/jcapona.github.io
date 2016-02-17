@@ -68,11 +68,6 @@ p {
   font-weight: 400;
   font-size: 150%;
   color: white;
-  
-  //border-color: gray;
-  //border-style: solid;
-  //border-width: 1px;
-
   text-decoration: none;
   margin: 0 10px 0 10px;
 }
@@ -137,21 +132,18 @@ p {
 }
 
 #about {
+  min-height: 90vh;
+  position: relative;
+  padding: 0;
   background: url('img/me2.jpg') no-repeat center center;
   background-size: cover;
-  text-align: right;
-  min-height: 90vh;
   overflow: hidden;
-  opacity: 1;
 }
 
 #about .row {
   background-color: black;
   min-height: 90vh;
   opacity: 0.7;
-}
-#about .text {
-  vertical-align: middle;
 }
 
 #about h2{
@@ -176,7 +168,7 @@ p {
 .portfolio h2{
   font-size: 400%;
   text-align: center;
-  margin: 50px 0 50px 0;
+  margin: 100px 0 75px 0;
 }
 
 #contact {
@@ -187,7 +179,7 @@ p {
 #contact h2{
   font-size: 400%;
   text-align: center;
-  margin: 30px 0 0 0;
+  margin: 100px 0 0 0;
 }
 
 #contact p {
@@ -213,8 +205,8 @@ p {
   color: #06AED5;
 }
 
-.portfolio .col-md-4, .portfolio .col-xs.6 {
-  margin: 0 0 0 0;
+.row {
+  margin: 0;
 }
 
 .thumbnail {
