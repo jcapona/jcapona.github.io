@@ -114,6 +114,7 @@ $(document).ready(function() {
         }
   });
   
+
   $('body').scrollspy({target: "#nav-btns", offset: 70});
   
   $(".arrow").on('click', function(e) {
@@ -121,7 +122,7 @@ $(document).ready(function() {
     var hash = this.hash;
 
     $('html, body').animate({
-      scrollTop: $(hash).offset().top-70
+      scrollTop: $(hash).offset().top-140
     }, 1000, function(){
       window.location.hash = hash;
     });
@@ -132,18 +133,7 @@ $(document).ready(function() {
     var hash = this.hash;
 
     $('html, body').animate({
-      scrollTop: $(hash).offset().top-70
-    }, 1000, function(){
-      window.location.hash = hash;
-    });
-  });
-
-  $(".nav-buttons2 a").on('click', function(e) {
-    e.preventDefault();
-    var hash = this.hash;
-
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top-70
+      scrollTop: $(hash).offset().top-140
     }, 1000, function(){
       window.location.hash = hash;
     });
@@ -213,6 +203,3 @@ function loadPortfolio(objArr, callback)
   }
   callback(html);
 }
-
-
-
