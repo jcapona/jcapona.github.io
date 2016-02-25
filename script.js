@@ -5,6 +5,13 @@ objArr.push({title: "IPROC",
             link: "http://www.iproc.co", 
             img: "https://40.media.tumblr.com/27271c983cbfe310911c65e2dd829281/tumblr_o2lpryvt4O1ugdw86o1_1280.png"});
 
+objArr.push({title: "Lets go out!", 
+            descr: "Nightlife coordination app", 
+            alt: "Lets go out", 
+            link: "http://lets-go-out.herokuapp.com/", 
+            img: "https://41.media.tumblr.com/f4faebe14faec7c93cebcf916d6a1e44/tumblr_o33vbyyWNy1ugdw86o1_1280.png"});
+
+
 objArr.push({title: "QuickPoll", 
             descr: "App to make online polls", 
             alt: "QuickPoll", 
