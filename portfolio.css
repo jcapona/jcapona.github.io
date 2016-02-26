@@ -76,7 +76,7 @@ p {
   margin: 0 10px 0 10px;
 }
 
-.nav-buttons a:hover, .nav-buttons2 a:hover {
+.nav-buttons a:hover {
   background:gray;
   color: black;
   transition: all ease .5s;
@@ -88,26 +88,6 @@ p {
  padding: 10px 0 10px 0;
 }
 
-#nav2 {
-  text-align:right;
-  margin: 0 0 50px 0;
-}
-
-.nav-buttons2 a {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 150%;
-  color: black;
-  
-  padding: 10px 10px 10px 10px;
-  border-color: gray;
-  border-style: solid;
-  border-width: 1px;
-
-  text-decoration: none;
-  margin: 0 10px 0 10px;
-}
-
 .arrow {
   min-height: 10vh;
   font-size: 400%;
@@ -116,16 +96,16 @@ p {
 
 #home {
   padding-top: 10vh;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   position: relative;
 }
 
 #home h1 {
-  font-size: 800%;
-  font-weight: 900;
   text-align:center;
-  margin-top: 40vh;
+  font-size: 550%;
+  font-weight: 900;
+  margin: 0;
 }
 
 #home p {
@@ -213,26 +193,42 @@ p {
   margin: 0;
 }
 
+#port .col-md-4, #port .col-xs-12, #port .row {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
 .thumbnail {
-    position:relative;
-    overflow:hidden;
+  position:relative;
+  overflow:hidden;
+  border-width: 0;
+  border-radius: 0;
 }
  
 .caption {
-    position:absolute;
-    top: 0;
-    right: 0;
-    background: rgba(35, 100, 205, 0.8);
-    width: 100%;
-    height: 100%;
-    display: none;
-    z-index: 2;
-    padding: 30%;
+  position:absolute;
+  top: 0;
+  right: 0;
+  background: rgba(40,40,40, 0.8);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 2;
+  padding: 30%;
 }
 
-.caption h3, .caption p {
+.caption h3, .caption p, .caption h4, .caption a {
   color: #fff;
   text-align: center;
+  text-decoration: none;
+}
+
+.caption p {
+  font-size: 1vw;
+}
+
+.caption h3 {
+  font-size: 2vw;
 }
 
 #footer {
