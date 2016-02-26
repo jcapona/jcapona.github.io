@@ -1,73 +1,84 @@
 var objArr = [];
 objArr.push({title: "IPROC", 
             descr: "IPROC landing page", 
+            plat: "HTML + CSS + NodeJS",
             alt: "IPROC", 
             link: "http://www.iproc.co", 
             img: "https://40.media.tumblr.com/27271c983cbfe310911c65e2dd829281/tumblr_o2lpryvt4O1ugdw86o1_1280.png"});
 
 objArr.push({title: "Lets go out!", 
-            descr: "Nightlife coordination app", 
+            descr: "Fullstack nightlife coordination app", 
+            plat: "HTML + CSS + NodeJS + MongoDB + Sails.JS",
             alt: "Lets go out", 
             link: "http://lets-go-out.herokuapp.com/", 
             img: "https://41.media.tumblr.com/f4faebe14faec7c93cebcf916d6a1e44/tumblr_o33vbyyWNy1ugdw86o1_1280.png"});
 
-
 objArr.push({title: "QuickPoll", 
-            descr: "App to make online polls", 
+            descr: "Full stack app to easily create and share online polls.",
+            plat: "HTML + CSS + NodeJS + MongoDB", 
             alt: "QuickPoll", 
             link: "http://quick-poll.herokuapp.com", 
             img: "https://41.media.tumblr.com/ea9b77885b925e4548680619fa03f296/tumblr_o2lq03BaaQ1ugdw86o1_1280.png"});
 
 objArr.push({title: "Mini Calq", 
-            descr: "Small calculator", 
+            descr: "Small calculator.",
+            plat: "HTML + CSS + JS + JQuery", 
             alt: "Mini Calq", 
             link: "http://codepen.io/jcapona/full/xZEJvm", 
             img: "https://40.media.tumblr.com/37845fbfc15e81ef1a2034b00e3462c7/tumblr_o1xq2cafNl1ugdw86o1_1280.png"});
 
 objArr.push({title: "WikiSearch", 
-            descr: "Search in Wikipedia from this web.", 
+            descr: "Search in Wikipedia from this web. Uses Wikipedia API.", 
+            plat: "HTML + CSS + JS + JQuery",
             alt: "WikiSearch", 
             link: "http://codepen.io/jcapona/full/YwpmNm", 
             img: "https://40.media.tumblr.com/0cbd2ccd319335757f4908bebcf22d84/tumblr_o0l7pkc3WZ1ugdw86o1_1280.png"});
 
 objArr.push({title: "Pomodoro Clock", 
-            descr: "Small countdown timer.", 
+            descr: "Small countdown timer, allows to set work and rest times.", 
+            plat: "HTML + CSS + JS + JQuery", 
             alt: "Pomodoro Clock", 
             link: "http://codepen.io/jcapona/full/xZEqLv", 
             img: "https://40.media.tumblr.com/6088fe76093db527f3472a7a7ddae49b/tumblr_o0l75dUUf51ugdw86o1_1280.png"});
 
 objArr.push({title: "Tic-tac-toe", 
-            descr: "Dare you to beat me.", 
+            descr: "Tic tac toe online game. Dare you to beat me.", 
+            plat: "HTML + CSS + JS + JQuery", 
             alt: "Tic-tac-toe", 
             link: "http://codepen.io/jcapona/full/pgRezR", 
             img: "https://40.media.tumblr.com/02a4e96acf19a8cb17e9bdb8d45eb634/tumblr_o0ld31pq9B1ugdw86o1_1280.png"});
 
 objArr.push({title: "Simon Game", 
             descr: "Small countdown timer.", 
-            alt: "Simon Game", 
+            plat: "HTML + CSS + JS + JQuery", 
+            alt: "Simon Game is a memory skill game created in 1978.", 
             link: "http://codepen.io/jcapona/full/obBEjX", 
             img: "https://41.media.tumblr.com/85304d5fb0bb5bb13921e680e908d951/tumblr_o0kguqFvxC1ugdw86o1_1280.png"});
            
 objArr.push({title: "FCC TwitchTV", 
             descr: "Playing with Twitch.TV API", 
+            plat: "HTML + CSS + JS + JQuery", 
             alt: "TwitchTV", 
             link: "http://codepen.io/jcapona/full/xZgGNR", 
             img: "https://41.media.tumblr.com/906c7341b5c9696da52c1d161dba242a/tumblr_o0kguqFvxC1ugdw86o2_1280.png"});
 
 objArr.push({title: "WeatherApp", 
-            descr: "Retrieves weather from your city.", 
+            descr: "Retrieves weather from your city, based on your IP address.", 
+            plat: "HTML + CSS + JS + JQuery", 
             alt: "WeatherApp", 
             link: "http://codepen.io/jcapona/full/PZbdpN", 
             img: "https://41.media.tumblr.com/e4e64976fb0dba005adfd3ec846d3f27/tumblr_o0l8381K3D1ugdw86o1_1280.png"});
 
 objArr.push({title: "Cool Quotes", 
             descr: "Small quote generator", 
+            plat: "HTML + CSS + JS + JQuery", 
             alt: "Cool Quotes", 
             link: "http://codepen.io/jcapona/full/vLXLON", 
             img: "https://40.media.tumblr.com/ea90fddb9c74928ba3e9051e2894bea8/tumblr_o0lajrpKUm1ugdw86o1_1280.png"});
            
 objArr.push({title: "Camper news", 
             descr: "Gets you the latest user posted news from Free Code Camp", 
+            plat: "HTML + CSS + JS + JQuery", 
             alt: "Camper news", 
             link: "http://codepen.io/jcapona/full/OMbqNd", 
             img: "https://40.media.tumblr.com/1fb6ff788b9ab41a4b01b0e8f438f512/tumblr_o0jnodHdTv1ugdw86o1_1280.png"});  
@@ -114,8 +125,7 @@ $(document).ready(function() {
         }
   });
   
-
-  $('body').scrollspy({target: "#nav-btns", offset: 70});
+  $('body').scrollspy({target: "#nav-btns", offset: 140});
   
   $(".arrow").on('click', function(e) {
     e.preventDefault();
@@ -175,7 +185,9 @@ function loadPortfolio(objArr, callback)
           html += '<div class="caption">';
             html += '<h3>'+portf.title+'</h3>';
             html += '<p>'+portf.descr+'</p>';
-            html += '<p><a href="'+portf.link+'" target="_blank" class="btn btn-danger" rel="tooltip" title="View">View</a></p>';
+            if(portf.plat !== undefined)
+              html += '<p>'+portf.plat+'</p>';
+            html += '<h4><a href="'+portf.link+'" target="_blank"><span class="label label-info">View</span></a></h4>';
           html += '</div>';
           html += '<img class="img-responsive" src="'+portf.img+'" alt="'+portf.alt+'">';
         html += '</div>';
