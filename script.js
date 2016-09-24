@@ -13,6 +13,13 @@ objArr.push({title: "Lets go out!",
             link: "http://lets-go-out.herokuapp.com/", 
             img: "https://41.media.tumblr.com/f4faebe14faec7c93cebcf916d6a1e44/tumblr_o33vbyyWNy1ugdw86o1_1280.png"});
 
+objArr.push({title: "Stockmarket Charter", 
+            descr: "Displays recent trend lines for the selected stocks. Uses websockets to make all users connected see the same stocks.", 
+            plat: "HTML + CSS + NodeJS + MongoDB + Socket.io",
+            alt: "Stock Market Charter", 
+            link: "http://stockmarket-charter.herokuapp.com/", 
+            img: "https://41.media.tumblr.com/1df2d6a91bee46ca13dc2003376739ac/tumblr_o3fpcrPweG1ugdw86o1_1280.png"});
+
 objArr.push({title: "QuickPoll", 
             descr: "Full stack app to easily create and share online polls.",
             plat: "HTML + CSS + NodeJS + MongoDB", 
