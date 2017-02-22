@@ -1,3 +1,3 @@
-particlesJS.load('particles-js', 'particles.json', function() {
+particlesJS.load('particles-js', 'http://jcapona.github.io/particles.json', function() {
   
 });
